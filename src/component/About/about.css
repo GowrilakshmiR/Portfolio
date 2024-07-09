@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#about{
+    height: 150vh;
+    width: 100vw;
+    background-image: url(../../assets/color-sharp.png);
+    /* background-image: url(../../assets/color-sharp2.png); */
+    background-color: rgba(0, 0, 0, 0.925);
+    background-size: cover;
+    position: relative;
+  
+    
+}
+.pg{
+    height: 70px;
+    width: auto;
+    background: transparent;
+    position: relative;
+    top: 35px;
+}
+.dc{
+    font-size: 50px;
+}
+.png{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.mount{
+    height: 50%;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.stars{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+.ts{
+    color: white;
+    font-size: 50px;
+    position: relative;
+    text-align: center;
+    top: 300px;
+    
+}
+.planet{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    animation: leftright 5s linear infinite;
+
+}
+@keyframes leftright{
+    0%{
+        transform: translateX(-20px);
+    }
+    
+    50%{
+        transform: translateY(20px);
+    }  
+
+    75%{
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(-20px);
+    }
+}
+
+
+.box{
+    height: 80vh;
+    width: 80%;
+    background-color: black;
+    text-align: center;
+    position: absolute;
+    left: 110px;
+    top: 100px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+     /* background: linear-gradient(90.21deg,rgba(170,54,124,0.5)-5.91%,rgba(74,47,189,0.5)120%); */
+}
+.box h1,p{
+    color: white;
+}
+
+.fl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.circle{
+  height: 140px;
+  width: 140px;
+  border-radius: 100px;
+  background-color: rgb(71, 27, 175);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width:600px){
+    #about{
+        width: auto;
+        height: 130vh;
+    }
+
+    .box{
+        left: 10%;
+    }
+    .ts{
+        font-size: 25px;
+    } 
+    .circle{
+        height: 75px;
+        width: 75px;
+    }
+    .pg{
+        height: 35px;
+        top: 20px;
+        
+    }
+    .png{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 80%;
+        align-items: center;
+    
+    }
+    .dc{
+        font-size: 30px;
+    }
+
+    
+    .fl{
+       margin: 10px;
+    }
+}
