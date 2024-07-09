@@ -16,7 +16,7 @@ const About = (props) => {
     <>
     <div id='about'  ref={props.newref}>
       <div className='box'>
-     <h1 className='dc' >Skills</h1>
+     <h1 className='dc' >Skills5</h1>
         <div className='png'>
           <div className='fl'>
              <div className='circle'>
