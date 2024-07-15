@@ -13,9 +13,9 @@ import Cv from './component/cv/Cv';
 const App = () => {
   return (
    <>
-   <BrowserRouter>
+   <BrowserRouter basename='/portfolio1'>
    <Routes>
-    <Route>
+    <Route >
     <Route path="/" element={<Togglebutton/>}/>
     <Route path='/cv' element={<Cv/>}/>
     <Route path='/contact' element={<Contact/>}/>
